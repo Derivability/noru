@@ -1,0 +1,27 @@
+{
+
+  "manifest_version": 2,
+  "name": "noru",
+  "version": "0.1",
+
+  "description": "Adds '-inurl:*.ru' to google search queries",
+
+  "icons": {
+    "48": "icons/noru-48.png"
+  },
+
+  "permissions": [
+    "<all_urls>"
+  ],
+
+  "browser_action":
+  {
+	  "default_icon":"icons/noru-48.png",
+	  "default_title": "NoRu",
+	  "default_popup": "popup/popup.html"
+  },
+
+  "background": {
+	  "scripts": ["background.js"]
+  }
+}
